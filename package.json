@@ -1,0 +1,19 @@
+{
+    "name": "typescript-template-repo",
+    "version": "1.0.0",
+    "description": "TypeScript template repo",
+    "license":"MIT",
+    "scripts": {
+        "clean": "lage clean",
+        "build": "lage build",
+        "test": "lage test",
+        "start": "lage start"
+      },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/osfprieto/TypeScriptTemplate"
+    },
+    "devDependencies": {
+        "lage": "1.9.5"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "typescript-template-package",
+    "version": "1.0.0",
+    "description": "TypeScript template package",
+    "main": "lib/index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/osfprieto/TypeScriptTemplate"
+    },
+    "bin": {
+      "just-scripts": "./just-scripts.js"
+    },
+    "scripts": {
+        "clean": "node ./just-scripts.js clean",
+        "build": "node ./just-scripts.js build",
+        "test": "node ./just-scripts.js test"
+    },
+    "devDependencies": {
+      "@types/node": "^16.11.12",
+      "jest": "^29.1.2",
+      "jest-cli": "^29.1.2",
+      "typescript": "~4.9.3"
+    }
+  }
+  
