@@ -7,6 +7,7 @@
     "scripts": {
         "clean": "lage clean",
         "build": "lage build",
+        "test": "lage test",
         "start": "lage start"
     },
     "workspaces": {
