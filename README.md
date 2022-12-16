@@ -24,5 +24,11 @@ Run `yarn` so it installs all the required modules.
 
 Refer to the [package.json](./package.json) definition for the scripts that you can run. Some include:
 
-- `yarn build`
-- `yarn start`
+- `yarn clean`.
+- `yarn build`.
+- `yarn test`.
+- `yarn test`.
+
+### Running a task on a specific package
+
+`yarn <foo> --to <package>`.
