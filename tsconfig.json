@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "esnext"
+    "module": "esnext",
+    "pretty": true,
+    "types": ["node", "jest"]
   }
 }
-  

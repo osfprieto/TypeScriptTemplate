@@ -1,16 +1,10 @@
-console.log('kmas');
-
 const {
     task,
     cleanTask,
     tscTask,
-    jestTask,
     series
 } =  require('just-scripts');
 
 task('clean', cleanTask(['bin', 'dist', 'lib']));
-task('jest', jestTask());
-task('ts', tscTask({ build: 'tsconfig.json' }));
-
+task('ts', series(tscTask({ build: 'tsconfig.json' }), () => {console.log('kmas')}));
 task('build', series('ts'));
-task('test', series('jest'));

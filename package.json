@@ -6,8 +6,7 @@
     "private": true,
     "scripts": {
         "clean": "lage clean",
-        "build": "lage build",
-        "test": "lage test"
+        "build": "lage build"
     },
     "workspaces": {
       "packages": [
