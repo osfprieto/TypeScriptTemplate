@@ -8,7 +8,9 @@
       "just-scripts": "just-scripts/bin/just-scripts.js"
     },
     "scripts": {
-        "build": "node ./just-scripts build"
+      "clean": "node ./just-scripts clean",
+      "build": "node ./just-scripts build",
+      "start": "node ./just-scripts start"
     },
     "devDependencies": {
       "typescript": "~4.9.3",

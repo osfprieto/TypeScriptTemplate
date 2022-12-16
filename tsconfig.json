@@ -3,6 +3,6 @@
     "target": "es2020",
     "module": "esnext",
     "pretty": true,
-    "types": ["node", "jest"]
+    "types": ["node"]
   }
 }

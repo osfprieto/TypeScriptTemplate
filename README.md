@@ -5,7 +5,6 @@ This is a repo with a quick starter project that includes:
 - `TypeScript` as the compiler language.
 - `yarn` as the dependency manager.
 - `just` to help define tasks within the package.
-- `jest` to enable easy testing.
 
 ## Pre-requisities
 
@@ -24,5 +23,4 @@ Run `yarn` so it installs all the required modules.
 Refer to the [package.json](./package.json) definition for the scripts that you can run. Some include:
 
 - `yarn build`
-- `yarn bundle`
-- `yarn test`
+- `yarn start`

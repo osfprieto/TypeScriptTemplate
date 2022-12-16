@@ -8,3 +8,5 @@ const {
 task('clean', cleanTask(['bin', 'dist', 'lib']));
 task('ts', series(tscTask({ build: 'tsconfig.json' }), () => {console.log('kmas')}));
 task('build', series('ts'));
+
+task('start', () => require('./lib').main());
