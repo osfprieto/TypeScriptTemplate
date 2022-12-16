@@ -8,6 +8,8 @@ This is a repo with a quick starter project that includes:
 
 ## Pre-requisities
 
+Download and install `NodeJS`.
+
 Install `yarn` by running:
 
 ```bash
