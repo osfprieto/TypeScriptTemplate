@@ -3,24 +3,14 @@
     "version": "1.0.0",
     "description": "TypeScript template package",
     "main": "lib/index.js",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/osfprieto/TypeScriptTemplate"
-    },
+    "repository": "https://github.com/osfprieto/TypeScriptTemplate",
     "bin": {
-      "just-scripts": "./just-scripts.js"
+      "just-scripts": "just-scripts/bin/just-scripts.js"
     },
     "scripts": {
-        "clean": "node ./just-scripts.js clean",
-        "build": "node ./just-scripts.js build",
-        "test": "node ./just-scripts.js test"
+        "build": "just-scripts build"
     },
     "devDependencies": {
-      "@types/node": "^16.11.12",
-      "just-scripts": "^2.0.1",
-      "jest": "^29.1.2",
-      "jest-cli": "^29.1.2",
-      "typescript": "~4.9.3"
+        "just-scripts": "^0.10.1"
     }
-  }
-  
+}
