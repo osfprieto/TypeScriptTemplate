@@ -1,12 +1,12 @@
 console.log('kmas');
 
-import {
+const {
     task,
     cleanTask,
     tscTask,
     jestTask,
     series
-} from 'just-scripts';
+} =  require('just-scripts');
 
 task('clean', cleanTask(['bin', 'dist', 'lib']));
 task('jest', jestTask());

@@ -8,9 +8,9 @@
       "just-scripts": "just-scripts/bin/just-scripts.js"
     },
     "scripts": {
-        "build": "just-scripts build"
+        "build": "node ./just-scripts build"
     },
     "devDependencies": {
-        "just-scripts": "^0.10.1"
+        "just-scripts": "^2.0.1"
     }
 }
