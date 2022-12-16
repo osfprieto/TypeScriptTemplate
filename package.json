@@ -1,8 +1,8 @@
 {
-    "name": "typescript-template-repo",
+    "name": "typescript-template-repo-package",
     "version": "1.0.0",
-    "description": "TypeScript template repo",
-    "license": "MIT",
+    "description": "TypeScript template repo package",
+    "license": "WTFPL",
     "private": true,
     "scripts": {
         "clean": "lage clean",
