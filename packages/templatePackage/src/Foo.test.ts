@@ -1,10 +1,10 @@
 import { Foo } from "./Foo";
 
-test('SimpleTest', function() {
+test('SimpleTest', () => {
     expect(true).toBe(true);
 });
 
-test('ActualTest', function() {
+test('ActualTest', () => {
     // Arrange
     const spy = jest.spyOn(console, 'log');
     
