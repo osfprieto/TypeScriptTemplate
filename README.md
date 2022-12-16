@@ -27,7 +27,7 @@ Refer to the [package.json](./package.json) definition for the scripts that you 
 - `yarn clean`.
 - `yarn build`.
 - `yarn test`.
-- `yarn test`.
+- `yarn start`.
 
 ### Running a task on a specific package
 
