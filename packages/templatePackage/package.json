@@ -2,6 +2,7 @@
     "name": "typescript-template-package",
     "version": "1.0.0",
     "description": "TypeScript template package",
+    "license": "WTFPL",
     "main": "lib/index.js",
     "repository": "https://github.com/osfprieto/TypeScriptTemplate",
     "scripts": {
