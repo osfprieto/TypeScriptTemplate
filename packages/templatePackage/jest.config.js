@@ -1,5 +1,9 @@
+const { createDefaultPreset } = require('ts-jest');
+
 module.exports = {
-    preset: "ts-jest",
-    testRegex: '\\.test\\.ts$',
-    testPathIgnorePatterns: ['/node_modules/', '/lib/']
+    ...createDefaultPreset(),
+    testEnvironment: 'node',
+    roots: ['<rootDir>/src'],
+    testMatch: ['**/*.test.ts'],
+    restoreMocks: true,
 };

@@ -8,7 +8,7 @@ const {
 
 
 task('jest', jestTask());
-task('ts', series(tscTask({ build: 'tsconfig.json' })));
+task('ts', series(tscTask({ project: 'tsconfig.build.json' })));
 
 task('clean', cleanTask(['bin', 'dist', 'lib']));
 task('build', series('ts'));

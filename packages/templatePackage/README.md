@@ -1,36 +1,40 @@
-# template package
+# Template package
 
-This is just a package that uses TypeScript and Just to build a TS example.
+A strict TypeScript example using CommonJS output, Jest, and Just tasks.
 
-## Used dependencies
+## Tooling
 
-Defined in the `package.json` file, these are used for different applications:
+- `typescript` checks source and tests with `tsconfig.json`.
+- `tsconfig.build.json` emits JavaScript and declarations into `lib`, excluding
+  tests. The package's `main` and `types` entries point to that output.
+- `just-scripts` defines build, clean, test, and start tasks in `just-task.js`.
+- `jest` and `ts-jest` execute TypeScript tests using `jest.config.js`.
+- `@types/jest` and `@types/node` provide test and runtime types.
 
-### `typescript`
+TypeScript remains on 6.0.x until `ts-jest` supports TypeScript 7. Jest automatically
+restores spies between tests.
 
-Used for compiling TS into JS. It knows to pick up the configuration from `tsconfig.json` which is configured to transpile to `JS` into the `/lib/` folder.
+## Workspace usage
 
-### `just-scripts`
+Install dependencies from the repository root. See the [root README](../../README.md)
+for runtime setup and workspace commands. To target this package:
 
-Defines tasks that are useful for some common steps within the repo. The tasks are configured by `just-task.js` and they can are used in the `scripts` section of the `package.json` definition.
+```sh
+yarn typecheck --to typescript-template-package
+yarn test --to typescript-template-package
+```
 
-### `jest`
+## Standalone usage
 
-To enable running tests locally. It knows to pick the configuration from `jest.config.js`.
+Copy this package, use a supported Node.js version, and run:
 
-### `ts-jest`
+```sh
+npm install
+npm run typecheck
+npm run build
+npm test
+npm start
+```
 
-Includes presets for runnig `jest` on `ts` files.
-
-### `@types/jest`
-
-Used locally to have make it easier to write test definitions.
-
-## Usage
-
-### Repo wide
-
-Run using `yarn` from the root of the repo, feel free to fork the entire repo. This is useful to enable modular definition of packages. For more details refer to the repo's [README](../../README.md).
-
-### Stand-alone package
-If you want to use this package on its own, feel free to copy it and just run `npm install` on from the package to install all depdendencies, from then on you can run `npm run <foo>` to run any of the scripts defined in the `package.json` file.
+Standalone start uses the existing build; run `npm run build` first.
+Commit the generated standalone lockfile for reproducible installs.

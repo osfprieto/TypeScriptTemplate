@@ -4,9 +4,14 @@
     "description": "TypeScript template repo package",
     "license": "WTFPL",
     "private": true,
+    "packageManager": "yarn@1.22.22",
+    "engines": {
+        "node": "^22.22.0 || ^24.0.0 || ^26.0.0"
+    },
     "scripts": {
         "clean": "lage clean",
         "build": "lage build",
+        "typecheck": "lage typecheck",
         "test": "lage test",
         "start": "lage start"
     },
@@ -17,7 +22,7 @@
     },
     "repository": "https://github.com/osfprieto/TypeScriptTemplate",
     "devDependencies": {
-        "lage": "1.9.5"
+        "lage": "^2.17.1"
     },
     "author": "osfprieto"
 }
